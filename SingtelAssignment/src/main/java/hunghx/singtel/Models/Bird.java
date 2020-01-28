@@ -8,9 +8,9 @@ import hunghx.singtel.Behaviours.Interfaces.SpeakBehaviour;
 import hunghx.singtel.Behaviours.Interfaces.SwimBehaviour;
 
 public class Bird extends Animal {
-    FlyBehaviour flyBehaviour;
-    SpeakBehaviour speakBehaviour;
-    SwimBehaviour swimBehaviour;
+    protected FlyBehaviour flyBehaviour;
+    protected SpeakBehaviour speakBehaviour;
+    protected SwimBehaviour swimBehaviour;
 
     public Bird() {
         this.flyBehaviour = new FlyWithWings();
@@ -28,5 +28,9 @@ public class Bird extends Animal {
 
     public void performSwim() {
         swimBehaviour.swim();
+    }
+
+    public void walk() {
+        System.out.println("I am walking");
     }
 }

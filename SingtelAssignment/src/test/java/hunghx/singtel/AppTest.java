@@ -13,9 +13,13 @@ import hunghx.singtel.Behaviours.Implementations.Meow;
 import hunghx.singtel.Behaviours.Implementations.WoofWoof;
 import hunghx.singtel.Models.Bird;
 import hunghx.singtel.Models.Chicken;
+import hunghx.singtel.Models.Clownfish;
+import hunghx.singtel.Models.Dolphin;
 import hunghx.singtel.Models.Duck;
+import hunghx.singtel.Models.Fish;
 import hunghx.singtel.Models.Parrot;
 import hunghx.singtel.Models.Rooster;
+import hunghx.singtel.Models.Shark;
 
 public class AppTest {
 
@@ -136,5 +140,36 @@ public class AppTest {
         Bird parrot = new Parrot(new WoofWoof());
         parrot.performSing();
         assertEquals("Parrot speaking incorrectly", "Woof, woof\n", outContent.toString());
+    }
+
+    /**
+     * Test case for shark eating fish
+     */
+    @Test
+    public void testSharkEatingFish() {
+        Shark shark = new Shark();
+        Fish clownfish = new Clownfish();
+        shark.eat(clownfish);
+        assertEquals("Shark eating incorrectly", "This " + clownfish.getColour() + " is so delicious!\n", outContent.toString());
+    }
+
+    /**
+     * Test case for clown fish making joke
+     */
+    @Test
+    public void testClownFishMakingJoke() {
+        Clownfish clownfish = new Clownfish();
+        clownfish.makeJoke();
+        assertEquals("Clownfish making joke incorrectly", "Haha I'm so funny\n", outContent.toString());
+    }
+
+    /**
+     * Test case for dolphin swimming
+     */
+    @Test
+    public void testDolphinSwimming() {
+        Dolphin dolphin = new Dolphin();
+        dolphin.performSwim();
+        assertEquals("Dolphin swimming incorrectly", "I am swimming\n", outContent.toString());
     }
 }

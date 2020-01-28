@@ -38,4 +38,21 @@ Behaviours will be seperated away from the class and it can be assigned at runti
     d. How do you keep the parrot maintainable? What if we need another parrot
     lives near a Duck? Or near a phone that rings frequently?
 ```
-Because I have seperated the animal class code and its behaviours, it is easy to extend the ability of an animal at runtime. A parrot can be initialized with any sound you want a parrot to make, just pass a behaviour to its constructor. It is easy to maintain as well.<br/>
+Because I have seperated the animal class code and its behaviours, it is easy to extend the ability of an animal at runtime. A parrot can be initialized with any sound you want a parrot to make, just pass a behaviour to its constructor. It is easy to maintain as well. When you want a new parrot with a new sound, you do not need to modify the Parrot class. 
+
+## B. Model fish as well as other swimming animals
+
+```bash
+1. In addition to the birds, can you model a fish? 
+    a. Fishes don’t sing
+    b. Fishes don’t walk 
+    c. Fishes can swim
+2. Can you specialize the fish as a Shark and as a Clownfish? 
+    a. Sharks are large and grey
+    b. Clownfish are small and colourful (orange) 
+    c. Clownfish make jokes
+    d. Sharks eat other fish
+3. Dolphins are not exactly fish, yet, they are good swimmers
+    a. Can you model a dolphin that swims without inheriting from a fish class? b. How do you avoid duplicating code or introducing unneeded overhead?
+```
+3.b: Dolphin class implemented **SwimableBehaviour** directly.
