@@ -12,6 +12,7 @@ import org.junit.Test;
 import hunghx.singtel.Models.Bird;
 import hunghx.singtel.Models.Chicken;
 import hunghx.singtel.Models.Duck;
+import hunghx.singtel.Models.Rooster;
 
 public class AppTest {
 
@@ -102,5 +103,15 @@ public class AppTest {
         Bird chicken = new Duck();
         chicken.performSwim();
         assertEquals("Duck swimming incorrectly", "I am swimming\n", outContent.toString());
+    }
+
+    /**
+     * Test case for rooster sound
+     */
+    @Test
+    public void testRoosterSpeaking() {
+        Bird rooster = new Rooster();
+        rooster.performSing();
+        assertEquals("Rooster speaking incorrectly", "Cock-a-doodle-doo\n", outContent.toString());
     }
 }

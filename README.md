@@ -8,8 +8,6 @@
     b. How did you optimize the code for maintainability?
     (Ask yourself the same question for all following exercises)
 ```
-
-1. <br/>
     a. Use ByteArrayOutputStream to verify the console output.<br/>
     b. Write clean and readable code. Do write comments. And Animal class is changed into abstract so it cannot be initialized. <br/>
 
@@ -22,3 +20,13 @@
 ```
 For this question, I have added behaviours such as **FlyBehaviour**, **SpeakBehaviour**. Each different action will be implemented from such behaviours, for example, **Quack** is an implementation of **SpeakBehavior**.
 Behaviours will be seperated away from the class and it can be assigned at runtime. Therefore, as birds, duck and chicken can make their own sound as well as act differently when they fly (duck can fly but chicken cannot). It would be easier for code-reusing and maintainance.
+
+```bash
+3. Now how would you model a rooster?
+    a. A rooster says: “Cock-a-doodle-doo”
+    b. How is the rooster related to the chicken?
+    c. Can you think of other ways to model a rooster without using inheritance?
+```
+    b. A rooster is a chicken. It is an adult male chicken. <br/>
+    c. Use properties of the Chicken class to verify its type such as age, sex. For instance, a male and 3-year-old chicken is definitely a rooster. <br/>
+
