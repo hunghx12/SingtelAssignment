@@ -9,18 +9,18 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-import hunghx.singtel.Behaviours.Implementations.Meow;
-import hunghx.singtel.Behaviours.Implementations.WoofWoof;
-import hunghx.singtel.Models.Bird;
-import hunghx.singtel.Models.Butterfly;
-import hunghx.singtel.Models.Chicken;
-import hunghx.singtel.Models.Clownfish;
-import hunghx.singtel.Models.Dolphin;
-import hunghx.singtel.Models.Duck;
-import hunghx.singtel.Models.Fish;
-import hunghx.singtel.Models.Parrot;
-import hunghx.singtel.Models.Rooster;
-import hunghx.singtel.Models.Shark;
+import hunghx.singtel.behaviours.implementations.Meow;
+import hunghx.singtel.behaviours.implementations.WoofWoof;
+import hunghx.singtel.models.Bird;
+import hunghx.singtel.models.Butterfly;
+import hunghx.singtel.models.Chicken;
+import hunghx.singtel.models.Clownfish;
+import hunghx.singtel.models.Dolphin;
+import hunghx.singtel.models.Duck;
+import hunghx.singtel.models.Fish;
+import hunghx.singtel.models.Parrot;
+import hunghx.singtel.models.Rooster;
+import hunghx.singtel.models.Shark;
 
 public class AppTest {
 

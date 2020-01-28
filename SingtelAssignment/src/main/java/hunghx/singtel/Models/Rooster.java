@@ -1,8 +1,8 @@
-package hunghx.singtel.Models;
+package hunghx.singtel.models;
 
-import hunghx.singtel.Behaviours.Implementations.CannotFly;
-import hunghx.singtel.Behaviours.Implementations.CockADoodleDoo;
-import hunghx.singtel.Behaviours.Implementations.Swim;
+import hunghx.singtel.behaviours.implementations.CannotFly;
+import hunghx.singtel.behaviours.implementations.CockADoodleDoo;
+import hunghx.singtel.behaviours.implementations.Swim;
 
 public class Rooster extends Chicken {
     public Rooster() {

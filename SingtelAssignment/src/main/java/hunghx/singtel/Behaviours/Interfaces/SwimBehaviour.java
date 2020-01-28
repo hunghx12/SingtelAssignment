@@ -1,4 +1,4 @@
-package hunghx.singtel.Behaviours.Interfaces;
+package hunghx.singtel.behaviours.interfaces;
 
 /**
  * Animal that can swim. Need to implement swim method.

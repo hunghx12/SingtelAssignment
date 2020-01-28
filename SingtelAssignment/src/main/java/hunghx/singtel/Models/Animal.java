@@ -1,4 +1,4 @@
-package hunghx.singtel.Models;
+package hunghx.singtel.models;
 
 public abstract class Animal {
     

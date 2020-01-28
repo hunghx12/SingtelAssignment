@@ -1,6 +1,6 @@
-package hunghx.singtel.Behaviours.Implementations;
+package hunghx.singtel.behaviours.implementations;
 
-import hunghx.singtel.Behaviours.Interfaces.SwimBehaviour;
+import hunghx.singtel.behaviours.interfaces.SwimBehaviour;
 
 public class Swim implements SwimBehaviour {
 

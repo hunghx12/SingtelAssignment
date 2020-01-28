@@ -1,6 +1,6 @@
-package hunghx.singtel.Behaviours.Interfaces;
+package hunghx.singtel.behaviours.interfaces;
 
-import hunghx.singtel.Models.Fish;
+import hunghx.singtel.models.Fish;
 
 /**
  * Animal that can eat. Need to implement eat method.

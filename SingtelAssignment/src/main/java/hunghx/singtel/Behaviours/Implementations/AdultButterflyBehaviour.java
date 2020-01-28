@@ -1,6 +1,6 @@
-package hunghx.singtel.Behaviours.Implementations;
+package hunghx.singtel.behaviours.implementations;
 
-import hunghx.singtel.Behaviours.Interfaces.ButterflyBehaviour;
+import hunghx.singtel.behaviours.interfaces.ButterflyBehaviour;
 
 public class AdultButterflyBehaviour implements ButterflyBehaviour {
 

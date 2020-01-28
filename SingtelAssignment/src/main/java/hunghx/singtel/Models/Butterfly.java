@@ -1,8 +1,8 @@
-package hunghx.singtel.Models;
+package hunghx.singtel.models;
 
-import hunghx.singtel.Behaviours.Implementations.AdultButterflyBehaviour;
-import hunghx.singtel.Behaviours.Implementations.CaterpillarBehaviour;
-import hunghx.singtel.Behaviours.Interfaces.ButterflyBehaviour;
+import hunghx.singtel.behaviours.implementations.AdultButterflyBehaviour;
+import hunghx.singtel.behaviours.implementations.CaterpillarBehaviour;
+import hunghx.singtel.behaviours.interfaces.ButterflyBehaviour;
 
 public class Butterfly extends Animal {
     protected ButterflyBehaviour butterflyBehaviour;

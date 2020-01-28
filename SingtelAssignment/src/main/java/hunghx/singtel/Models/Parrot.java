@@ -1,6 +1,6 @@
-package hunghx.singtel.Models;
+package hunghx.singtel.models;
 
-import hunghx.singtel.Behaviours.Interfaces.SpeakBehaviour;
+import hunghx.singtel.behaviours.interfaces.SpeakBehaviour;
 
 public class Parrot extends Bird {
 

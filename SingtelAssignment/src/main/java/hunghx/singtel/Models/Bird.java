@@ -1,11 +1,11 @@
-package hunghx.singtel.Models;
+package hunghx.singtel.models;
 
-import hunghx.singtel.Behaviours.Implementations.FlyWithWings;
-import hunghx.singtel.Behaviours.Implementations.Sing;
-import hunghx.singtel.Behaviours.Implementations.Swim;
-import hunghx.singtel.Behaviours.Interfaces.FlyBehaviour;
-import hunghx.singtel.Behaviours.Interfaces.SpeakBehaviour;
-import hunghx.singtel.Behaviours.Interfaces.SwimBehaviour;
+import hunghx.singtel.behaviours.implementations.FlyWithWings;
+import hunghx.singtel.behaviours.implementations.Sing;
+import hunghx.singtel.behaviours.implementations.Swim;
+import hunghx.singtel.behaviours.interfaces.FlyBehaviour;
+import hunghx.singtel.behaviours.interfaces.SpeakBehaviour;
+import hunghx.singtel.behaviours.interfaces.SwimBehaviour;
 
 public class Bird extends Animal {
     protected FlyBehaviour flyBehaviour;

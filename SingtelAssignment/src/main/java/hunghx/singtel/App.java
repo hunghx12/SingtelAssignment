@@ -1,12 +1,12 @@
 package hunghx.singtel;
 
-import hunghx.singtel.Behaviours.Implementations.CockADoodleDoo;
-import hunghx.singtel.Behaviours.Implementations.Meow;
-import hunghx.singtel.Behaviours.Implementations.WoofWoof;
-import hunghx.singtel.Models.Bird;
-import hunghx.singtel.Models.Chicken;
-import hunghx.singtel.Models.Duck;
-import hunghx.singtel.Models.Parrot;
+import hunghx.singtel.behaviours.implementations.CockADoodleDoo;
+import hunghx.singtel.behaviours.implementations.Meow;
+import hunghx.singtel.behaviours.implementations.WoofWoof;
+import hunghx.singtel.models.Bird;
+import hunghx.singtel.models.Chicken;
+import hunghx.singtel.models.Duck;
+import hunghx.singtel.models.Parrot;
 
 public class App {
     public static void main(String[] args) {

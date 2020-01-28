@@ -1,6 +1,6 @@
-package hunghx.singtel.Models;
+package hunghx.singtel.models;
 
-import hunghx.singtel.Behaviours.Interfaces.EatBehaviour;
+import hunghx.singtel.behaviours.interfaces.EatBehaviour;
 
 public class Shark extends Fish implements EatBehaviour {
    

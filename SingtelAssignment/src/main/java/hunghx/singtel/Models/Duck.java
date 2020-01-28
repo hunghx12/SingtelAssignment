@@ -1,8 +1,8 @@
-package hunghx.singtel.Models;
+package hunghx.singtel.models;
 
-import hunghx.singtel.Behaviours.Implementations.FlyWithWings;
-import hunghx.singtel.Behaviours.Implementations.Quack;
-import hunghx.singtel.Behaviours.Implementations.Swim;
+import hunghx.singtel.behaviours.implementations.FlyWithWings;
+import hunghx.singtel.behaviours.implementations.Quack;
+import hunghx.singtel.behaviours.implementations.Swim;
 
 public class Duck extends Bird {
     public Duck() {

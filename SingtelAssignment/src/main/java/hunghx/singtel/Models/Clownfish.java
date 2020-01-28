@@ -1,6 +1,6 @@
-package hunghx.singtel.Models;
+package hunghx.singtel.models;
 
-import hunghx.singtel.Behaviours.Interfaces.MakeJokeBehaviour;
+import hunghx.singtel.behaviours.interfaces.MakeJokeBehaviour;
 
 public class Clownfish extends Fish implements MakeJokeBehaviour{
 

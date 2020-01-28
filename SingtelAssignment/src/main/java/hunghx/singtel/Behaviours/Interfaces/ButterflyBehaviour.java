@@ -1,4 +1,4 @@
-package hunghx.singtel.Behaviours.Interfaces;
+package hunghx.singtel.behaviours.interfaces;
 
 /**
  * Behaviour of a butterfly based on its age.
