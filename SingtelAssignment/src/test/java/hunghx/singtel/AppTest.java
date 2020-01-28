@@ -9,9 +9,12 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
+import hunghx.singtel.Behaviours.Implementations.Meow;
+import hunghx.singtel.Behaviours.Implementations.WoofWoof;
 import hunghx.singtel.Models.Bird;
 import hunghx.singtel.Models.Chicken;
 import hunghx.singtel.Models.Duck;
+import hunghx.singtel.Models.Parrot;
 import hunghx.singtel.Models.Rooster;
 
 public class AppTest {
@@ -113,5 +116,25 @@ public class AppTest {
         Bird rooster = new Rooster();
         rooster.performSing();
         assertEquals("Rooster speaking incorrectly", "Cock-a-doodle-doo\n", outContent.toString());
+    }
+
+    /**
+     * Test case for rooster sound
+     */
+    @Test
+    public void testParrotLiveWithCatSpeaking() {
+        Bird parrot = new Parrot(new Meow());
+        parrot.performSing();
+        assertEquals("Parrot speaking incorrectly", "Meow\n", outContent.toString());
+    }
+
+    /**
+     * Test case for rooster sound
+     */
+    @Test
+    public void testParrotLiveWithDogSpeaking() {
+        Bird parrot = new Parrot(new WoofWoof());
+        parrot.performSing();
+        assertEquals("Parrot speaking incorrectly", "Woof, woof\n", outContent.toString());
     }
 }

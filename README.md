@@ -28,5 +28,14 @@ Behaviours will be seperated away from the class and it can be assigned at runti
     c. Can you think of other ways to model a rooster without using inheritance?
 ```
     b. A rooster is a chicken. It is an adult male chicken. <br/>
-    c. Use properties of the Chicken class to verify its type such as age, sex. For instance, a male and 3-year-old chicken is definitely a rooster. <br/>
+    c. Use properties of the Chicken class to verify its type such as age, sex. For instance, a male and 3-year-old chicken is definitely a rooster.<br/>
 
+```bash
+4. Can you model a parrot? We are specifically interested in three parrots, one that lived in a house with dogs one in a house with cats, the other lived on a farm next to the rooster.
+    a. A parrot living with dogs says: “Woof, woof”
+    b. A parrot living with cats says: “Meow”
+    c. A parrot living near the rooster says: “Cock-a-doodle-doo”
+    d. How do you keep the parrot maintainable? What if we need another parrot
+    lives near a Duck? Or near a phone that rings frequently?
+```
+Because I have seperated the animal class code and its behaviours, it is easy to extend the ability of an animal at runtime. A parrot can be initialized with any sound you want a parrot to make, just pass a behaviour to its constructor. It is easy to maintain as well.<br/>
