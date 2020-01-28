@@ -11,5 +11,14 @@
 
 1. <br/>
     a. Use ByteArrayOutputStream to verify the console output.<br/>
-    b. Write clean and readable code. Do write comments.<br/>
+    b. Write clean and readable code. Do write comments. And Animal class is changed into abstract so it cannot be initialized. <br/>
 
+```bash
+2. Now, we have 2 special kinds of birds: the Duck and the Chicken... Can you implement them to make their own special sound?
+    a. A duck says: “Quack, quack”
+    b. A duck can swim
+    c. A chicken says: “Cluck, cluck”
+    d. A chicken cannot fly (assumption: its wings are clipped but ignore that)
+```
+For this question, I have added behaviours such as **FlyBehaviour**, **SpeakBehaviour**. Each different action will be implemented from such behaviours, for example, **Quack** is an implementation of **SpeakBehavior**.
+Behaviours will be seperated away from the class and it can be assigned at runtime. Therefore, as birds, duck and chicken can make their own sound as well as act differently when they fly (duck can fly but chicken cannot). It would be easier for code-reusing and maintainance.
