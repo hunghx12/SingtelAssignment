@@ -12,6 +12,7 @@ import org.junit.Test;
 import hunghx.singtel.Behaviours.Implementations.Meow;
 import hunghx.singtel.Behaviours.Implementations.WoofWoof;
 import hunghx.singtel.Models.Bird;
+import hunghx.singtel.Models.Butterfly;
 import hunghx.singtel.Models.Chicken;
 import hunghx.singtel.Models.Clownfish;
 import hunghx.singtel.Models.Dolphin;
@@ -171,5 +172,26 @@ public class AppTest {
         Dolphin dolphin = new Dolphin();
         dolphin.performSwim();
         assertEquals("Dolphin swimming incorrectly", "I am swimming\n", outContent.toString());
+    }
+
+    /**
+     * Test case for caterpillar
+     */
+    @Test
+    public void testCaterpillar() {
+        Butterfly caterpillar = new Butterfly();
+        caterpillar.performFly();
+        assertEquals("caterpillar flying incorrectly", "Oops cannot fly yet. Wait for me to be a beautiful butterfly!\n", outContent.toString());
+    }
+
+    /**
+     * Test case for adult butterfly after Metamorphosis from caterpillar
+     */
+    @Test
+    public void testAdultButterflyAfterMetamorphosis() {
+        Butterfly butterfly = new Butterfly();
+        butterfly.metamorphose();
+        butterfly.performFly();
+        assertEquals("adult butterfly flying incorrectly", "Flyyyy. I am a beautiful butterfly!\n", outContent.toString());
     }
 }

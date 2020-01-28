@@ -8,8 +8,8 @@
     b. How did you optimize the code for maintainability?
     (Ask yourself the same question for all following exercises)
 ```
-    a. Use ByteArrayOutputStream to verify the console output.<br/>
-    b. Write clean and readable code. Do write comments. And Animal class is changed into abstract so it cannot be initialized. <br/>
+a. Use ByteArrayOutputStream to verify the console output.<br/>
+b. Write clean and readable code. Do write comments. And Animal class is changed into abstract so it cannot be initialized. <br/>
 
 ```bash
 2. Now, we have 2 special kinds of birds: the Duck and the Chicken... Can you implement them to make their own special sound?
@@ -27,8 +27,8 @@ Behaviours will be seperated away from the class and it can be assigned at runti
     b. How is the rooster related to the chicken?
     c. Can you think of other ways to model a rooster without using inheritance?
 ```
-    b. A rooster is a chicken. It is an adult male chicken. <br/>
-    c. Use properties of the Chicken class to verify its type such as age, sex. For instance, a male and 3-year-old chicken is definitely a rooster.<br/>
+b. A rooster is a chicken. It is an adult male chicken. <br/>
+c. Use properties of the Chicken class to verify its type such as age, sex. For instance, a male and 3-year-old chicken is definitely a rooster.<br/>
 
 ```bash
 4. Can you model a parrot? We are specifically interested in three parrots, one that lived in a house with dogs one in a house with cats, the other lived on a farm next to the rooster.
@@ -56,3 +56,16 @@ Because I have seperated the animal class code and its behaviours, it is easy to
     a. Can you model a dolphin that swims without inheriting from a fish class? b. How do you avoid duplicating code or introducing unneeded overhead?
 ```
 3.b: Dolphin class implemented **SwimableBehaviour** directly.
+
+## D. Model animals that change their behaviour over time
+This should be C
+
+```bash
+1. Can you model a butterfly? 
+    a. A butterfly can fly
+    b. A butterfly does not make a sound
+2. Can you optimize your model to account for the metamorphosis from caterpillar to butterfly?
+    a. A caterpillar cannot fly
+    b. A caterpillar can walk (crawl)
+```
+Done within the same instance. When a new butterfly is initialized, it will act as a caterpillar. After calling the metamorphose() method, it will change its behaviours to an adult butterfly's behaviours.
