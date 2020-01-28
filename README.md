@@ -69,3 +69,9 @@ This should be C
     b. A caterpillar can walk (crawl)
 ```
 Done within the same instance. When a new butterfly is initialized, it will act as a caterpillar. After calling the metamorphose() method, it will change its behaviours to an adult butterfly's behaviours.
+
+## BONUS
+```bash
+1. Can you add a second language (if you know a language other than English) Use the rooster as a PoC for demonstrating this. For example, this is how the Rooster sounds differently depending on language
+```
+Used Internationalization and Localization in Java to handle this.

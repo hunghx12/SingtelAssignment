@@ -1,5 +1,8 @@
 package hunghx.singtel;
 
+import java.util.Locale;
+import java.util.ResourceBundle;
+
 import hunghx.singtel.behaviours.implementations.CockADoodleDoo;
 import hunghx.singtel.behaviours.implementations.Meow;
 import hunghx.singtel.behaviours.implementations.WoofWoof;
@@ -7,9 +10,12 @@ import hunghx.singtel.models.Bird;
 import hunghx.singtel.models.Chicken;
 import hunghx.singtel.models.Duck;
 import hunghx.singtel.models.Parrot;
+import hunghx.singtel.models.Rooster;
 
 public class App {
     public static void main(String[] args) {
+        ResourceBundle bundle;
+
         System.out.println("I am a bird.");
         Bird bird = new Bird();
         bird.walk();
@@ -40,5 +46,17 @@ public class App {
         System.out.println("I am a parrot who is living near roosters. I can speak like them!");
         Bird parrotLiveNearRooster = new Parrot(new CockADoodleDoo());
         parrotLiveNearRooster.performSing();
+
+        System.out.println("I am a Vietnamese rooster!");
+        Locale.setDefault(new Locale("vi", "VN"));
+        bundle = ResourceBundle.getBundle("hunghx.singtel.properties.internationalization.MessageBundle");
+        Bird vietnameseRooster = new Rooster(new CockADoodleDoo(bundle.getString("speak")));
+        vietnameseRooster.performSing();
+
+        System.out.println("I am a Japanese rooster!");
+        Locale.setDefault(new Locale("ja", "JP"));
+        bundle = ResourceBundle.getBundle("hunghx.singtel.properties.internationalization.MessageBundle");
+        Bird japaneseRooster = new Rooster(new CockADoodleDoo(bundle.getString("speak")));
+        japaneseRooster.performSing();
     }
 }

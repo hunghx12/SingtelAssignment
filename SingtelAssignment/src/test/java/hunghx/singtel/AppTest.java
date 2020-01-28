@@ -4,11 +4,14 @@ import static org.junit.Assert.assertEquals;
 
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
+import java.util.Locale;
+import java.util.ResourceBundle;
 
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
+import hunghx.singtel.behaviours.implementations.CockADoodleDoo;
 import hunghx.singtel.behaviours.implementations.Meow;
 import hunghx.singtel.behaviours.implementations.WoofWoof;
 import hunghx.singtel.models.Bird;
@@ -193,5 +196,17 @@ public class AppTest {
         butterfly.metamorphose();
         butterfly.performFly();
         assertEquals("adult butterfly flying incorrectly", "Flyyyy. I am a beautiful butterfly!\n", outContent.toString());
+    }
+
+    /**
+     * Test case for internationalize rooster
+     */
+    @Test
+    public void testInternationalizeRooster() {
+        Locale.setDefault(new Locale("ja", "JP"));
+        ResourceBundle bundle = ResourceBundle.getBundle("hunghx.singtel.properties.internationalization.MessageBundle");
+        Bird japaneseRooster = new Rooster(new CockADoodleDoo(bundle.getString("speak")));
+        japaneseRooster.performSing();
+        assertEquals("Rooster speaking incorrectly", "ko-ke-kok-ko-o\n", outContent.toString());
     }
 }
